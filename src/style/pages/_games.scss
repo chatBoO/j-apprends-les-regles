@@ -1,0 +1,31 @@
+.gameCards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    gap: 30px;
+    background-color: #f6f6f6;
+    padding: 10px 10px;
+}
+
+.pagination {
+    
+    /* Style du bouton actif */
+    .active-button {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Style du bouton désactivé */
+    .disabled-button {
+        background-color: #cccccc;
+        color: #666666;
+        cursor: not-allowed;
+        opacity: 0.5; /* Optionnel pour rendre le bouton visuellement désactivé */
+        transition: none;
+        border: none;
+
+        &:hover {
+            transition: none;
+        }
+    }
+}
